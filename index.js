@@ -32,6 +32,6 @@ bot.on('ready', () => {
     console.log(`Bot ${bot.user.tag} is logged in!`);
 });
 
-bot.login('MTE4MjM0NDY5ODgzNzM1MjQ2OQ.GbUnf5.RiYN_Q-a5XjNJVVgELWjZn_Zas232_CXvW2f_s').then(() => {
+bot.login(process.env.token).then(() => {
     bot.user.setPresence({ activities: [{ name: 'Subscribe', type: 'PLAYING' }], status: 'online' });
 });
